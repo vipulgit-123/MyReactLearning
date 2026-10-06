@@ -1,31 +1,18 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
+import Fooditems from "./component/Fooditems.jsx";
+import ErrorMessage from "./component/ErrorMessage.jsx";
 
 function App() {
 
-   let foodItems = ["Dal","Green Vegetables","Roti","Salad","Milk","Ghee"];
-    let foodItems1 = [];
-
-    /*
-    if(foodItems1.length === 0){
-        return <h3>
-            I am still hungry
-        </h3>
-    }
-     */
-
-    let emptyMessages =  foodItems1.length ===0 && <h3>I am still hungry</h3>
-    // let emptyMessages =  foodItems1.length ===0 ? <h3>I am still hungry</h3> :null
+   //let foodItems = ["Dal","Green Vegetables","Roti","Salad","Milk","Ghee"];
+     let foodItems = [];
 
   return(
       <React.Fragment>
         <h1>Healthy Food</h1>
-        <ul className="list-group">
-            {foodItems1
-                .map((item)=> (
-                <li key={item} className="list-group-item">{item}</li>))}
-        </ul>
-          {emptyMessages}
+          <Fooditems foodItems={foodItems}/>
+          <ErrorMessage foodItems={foodItems} />
       </React.Fragment>
 
   )

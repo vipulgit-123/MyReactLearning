@@ -5,8 +5,8 @@ import ErrorMessage from "./component/ErrorMessage.jsx";
 
 function App() {
 
-   //let foodItems = ["Dal","Green Vegetables","Roti","Salad","Milk","Ghee"];
-     let foodItems = [];
+   let foodItems = ["Dal","Green Vegetables","Roti","Salad","Milk","Ghee"];
+    // let foodItems = [];
 
   return(
       <React.Fragment>

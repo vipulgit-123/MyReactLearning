@@ -1,9 +1,9 @@
 import Item from "./Item.jsx";
 
-const Fooditems = ({foodItems}) => {
+const Fooditems = (props) => {
     return (
  <ul className="list-group">
-            {foodItems
+            {props.foodItems
                 .map((item)=> (
                     <Item key={item} fooditem={item}/>
                 ))}

@@ -1,8 +1,8 @@
-const ErrorMessage =({foodItems})=>
+const ErrorMessage =(props)=>
 {
     return(
         <>
-        {foodItems.length ===0 && <h3>I am still hungry</h3>}
+        {props.foodItems.length ===0 && <h3>I am still hungry</h3>}
     </>
     )
 }
